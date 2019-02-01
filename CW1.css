@@ -1,0 +1,55 @@
+/*change font and set page margins*/
+body{
+    margin: 5%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*grid display with 10px gap and 2 columns*/
+/*using grid template areas to position elements*/
+.container{
+    display: grid;
+    grid-template-areas:
+    "header1 header1"
+    "section1 section1"
+    "article1 aside1"
+    "footer1 footer1";
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+}
+/*header*/
+header{
+    grid-area: header1;
+    background: lightgray;
+    padding: 5px;
+}
+/*button bar*/
+section{
+    grid-area: section1;
+    background: blue;
+    color: white;
+    padding: 10px;
+}
+/*button styling*/
+button{
+    color: white;
+    text-decoration: underline;
+    background: blue;
+    border: none;
+}
+/*article*/
+article{
+    grid-area: article1;
+    background: lightgray;
+    padding: 5px;
+}
+/*aside*/
+aside{
+    grid-area: aside1;
+    background: lightgray;
+    padding: 5px;
+}
+/*footer*/
+footer{
+    grid-area: footer1;
+    background: lightgray;
+    padding: 5px;
+}
